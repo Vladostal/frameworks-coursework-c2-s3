@@ -1,0 +1,323 @@
+{
+  "batch": "2026-11-15",
+  "pages_per_app": 3,
+  "seed": 42,
+  "limit": 1000,
+  "source": "Russian App Store customer-review RSS feeds",
+  "license": "not_specified",
+  "baseline": {
+    "dataset": "Aniemore/cedr-m7",
+    "revision": "7c72eb7322a00b531365e678bad8bba77e4bc8e3",
+    "files": [
+      {
+        "split": "train",
+        "rows": 7528,
+        "url": "https://huggingface.co/datasets/Aniemore/cedr-m7/resolve/7c72eb7322a00b531365e678bad8bba77e4bc8e3/data/train-00000-of-00001.parquet",
+        "sha256": "0eedf660f5d96bcd47d74506a62e7bca1c9e2ed97c7e97bb070c0a9b54a303a4"
+      },
+      {
+        "split": "test",
+        "rows": 1882,
+        "url": "https://huggingface.co/datasets/Aniemore/cedr-m7/resolve/7c72eb7322a00b531365e678bad8bba77e4bc8e3/data/test-00000-of-00001.parquet",
+        "sha256": "8659855b64d74ccfaf89f7add7ebe072d6e82c64d4983b81973c062adfc4a5df"
+      }
+    ]
+  },
+  "downloaded_entries": 1800,
+  "unique_source_ids": 1800,
+  "eligible_before_collection_dedup": 1320,
+  "filtered": {
+    "contact_or_external_link": 1,
+    "length_outside_40_1500": 446,
+    "not_enough_russian_text": 33
+  },
+  "collected_rows": 1000,
+  "exact_normalized_overlap_with_cedr_train_and_test": 0,
+  "near_overlap_with_cedr_train_and_test": 0,
+  "internal_exact_duplicates": 0,
+  "internal_near_duplicates": 0,
+  "per_app": {
+    "WhatsApp Messenger": 85,
+    "Telegram Messenger": 85,
+    "Яндекс Go": 83,
+    "Яндекс Карты": 85,
+    "Яндекс Музыка": 85,
+    "OZON": 85,
+    "WILDBERRIES": 85,
+    "Госуслуги": 71,
+    "Додо Пицца": 84,
+    "2ГИС": 84,
+    "Кинопоиск": 84,
+    "Яндекс Еда": 84
+  },
+  "ratings_not_emotion_labels": {
+    "2": 67,
+    "1": 479,
+    "3": 116,
+    "4": 63,
+    "5": 275
+  },
+  "source_updated_at_min": "2026-10-09T06:31:37-07:00",
+  "source_updated_at_max": "2026-11-14T02:31:20-07:00",
+  "lexical_cues_not_emotion_labels": {
+    "disgust": 32,
+    "anger": 18,
+    "fear": 6,
+    "enthusiasm": 5
+  },
+  "near_duplicate_rule": "word-trigram Jaccard >= 0.90, for texts with at least 8 words",
+  "snapshots": [
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=310633997/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:43.139247+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/310633997_page_1.json",
+      "sha256": "51ceb08efe613a331bad47bbbc2050401bb34d0cbbb85c3eaad5d821903bb2f7",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=310633997/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:43.948301+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/310633997_page_2.json",
+      "sha256": "14f8bac67a7e414b82a315f1ed9107e98bb8dfcfbca4dbb20c7f86f97bb33f84",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=310633997/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:44.800295+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/310633997_page_3.json",
+      "sha256": "fd682a64fef9ea4dac19dcaaad7ad8adf2c04b38d39365f00a93518be0100396",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=686449807/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:45.982473+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/686449807_page_1.json",
+      "sha256": "ba7075837f3ff3cb7defb1424be2b2bc872d28ad1c032b611c4b2b204d746162",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=686449807/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:48.981349+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/686449807_page_2.json",
+      "sha256": "80509e7ac2f7d1c3167ba94b36fc5efe33c52167eb3a7026d3bbbe19028cd7be",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=686449807/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:51.410790+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/686449807_page_3.json",
+      "sha256": "f2bdeef6d600abdb95dbc4c0a7a65c08f4f1976e5997eea8f7e491445f84c5f0",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=472650686/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:52.211172+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/472650686_page_1.json",
+      "sha256": "7e6a4e5e384b8da85165602dc7e52f667156e7ea024839c2135307831924d3d5",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=472650686/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:52.954730+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/472650686_page_2.json",
+      "sha256": "6373fc642049e95812146f4132dd755c50528a67981730327878ec9d6a3eadfc",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=472650686/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:53.990298+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/472650686_page_3.json",
+      "sha256": "6069bbfdd3c614f6e42b167f539324b0350a5b83b8f74ee78943ef5f2554573a",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=313877526/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:54.909992+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/313877526_page_1.json",
+      "sha256": "c8f0e7bd981af615e2ca89dfa3b7fe7e8b1847e9a5d330894cd0b1d529cbb9dd",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=313877526/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:55.860933+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/313877526_page_2.json",
+      "sha256": "03ae72325ec51e0a83f19d41d4ae1b3c4054572424388a564212b4af9d286388",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=313877526/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:56.632790+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/313877526_page_3.json",
+      "sha256": "96194a6e160ed9202ad20a95f6b2625b9a35c04acc5c619816dfa8e5c067bad4",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=520797969/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:57.389923+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/520797969_page_1.json",
+      "sha256": "16799785858ec0896de9ee31f6b16238509332913b596fe5124c9a8b24efd40e",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=520797969/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:58.268089+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/520797969_page_2.json",
+      "sha256": "b343a80d79dec8b92df092940e1686fdc87f64cebc05e8f632667e744e44fce2",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=520797969/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:29:59.467175+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/520797969_page_3.json",
+      "sha256": "c5f7217247a77bb891756958f8f5826d3da1ed60344293d640a9fb4bebd90f4c",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=407804998/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:02.901624+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/407804998_page_1.json",
+      "sha256": "02b83f5f4b80dddc4036cdec73418cfe01349f68e7495b184ff05d5a6c538c6d",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=407804998/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:05.670130+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/407804998_page_2.json",
+      "sha256": "b8cc4e27f8d6921f1822cd46f165df32be4027a68746c4598351222a5c88964f",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=407804998/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:06.440295+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/407804998_page_3.json",
+      "sha256": "c84644a9d39565fa2dc3526aa07949793cd877e31e62ff323616efbbaf16b4b1",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=597880187/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:07.240778+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/597880187_page_1.json",
+      "sha256": "35592f9ab31cdd12a199a8ee34ffa699ba55a7c320d0a17588e07f6d40482e20",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=597880187/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:07.971605+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/597880187_page_2.json",
+      "sha256": "df9da826ce93e2d2e1ac8269ac620a3286e2dbf9b4831ca4ca588f1a812c15b4",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=597880187/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:08.759535+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/597880187_page_3.json",
+      "sha256": "f7a31f13bae7a2283e2e5e0ffd219b2218f5d618860b343a3f4ed275e9d9041c",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=1367959794/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:09.508753+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1367959794_page_1.json",
+      "sha256": "d6d70b02a30baeb5610d3cb421ebda4cf9796166f1abdb6f1695fbde5dab8bce",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=1367959794/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:10.407242+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1367959794_page_2.json",
+      "sha256": "6b75ec32fb9bb77472a742c58bb10927696e255eef97bd5521e0619f3b5dacde",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=1367959794/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:11.187293+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1367959794_page_3.json",
+      "sha256": "21a55c01ed8b39ba1c0ff62a55ebd63bf962e2b8f8f1715802fc17fe6447c21c",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=894649641/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:11.960850+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/894649641_page_1.json",
+      "sha256": "32c12dc2b5c8f2f2b6d4265961689f2f172a0c2fdbc98c78685de4065b880a0c",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=894649641/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:12.740241+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/894649641_page_2.json",
+      "sha256": "8e0e10381a861d45e75d4476b4dcfea1a04ced4296097e85b485d0b0e8d8d6d9",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=894649641/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:13.481217+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/894649641_page_3.json",
+      "sha256": "f1312515fb4dc5059ce631c0395bbbdc8018b5ff0405868fb4da9a0f48349f3f",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=481627348/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:14.406585+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/481627348_page_1.json",
+      "sha256": "4194e5fa65ef101a6b47171ab8a878763b1456eddcc8ef53805dd789ab7e2ac5",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=481627348/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:15.149980+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/481627348_page_2.json",
+      "sha256": "3dfea953e2431f566486fbaf6abc0b89cea3cc4ee10ec056057df72c82c0fec1",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=481627348/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:15.919489+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/481627348_page_3.json",
+      "sha256": "ca9f3b07f697f4688e90434be0d3ad844a06dabd7636ed6c4813f558fafe48bd",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=477718890/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:16.767820+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/477718890_page_1.json",
+      "sha256": "c2dcbecd75e01684d96eee5db9b94d580fbc73d44a95804ef975ab18288aab1a",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=477718890/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:17.549365+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/477718890_page_2.json",
+      "sha256": "1211a480dbe8209dfa81a7a35f019e7175e582b72349b13612ed9f4c3bed0a85",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=477718890/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:18.331738+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/477718890_page_3.json",
+      "sha256": "4f0de92149dd6dddd91c8adac28c1ae6333361f29ad40d4c913e775b5dd36bba",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=1078986931/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:19.202536+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1078986931_page_1.json",
+      "sha256": "ad8d7017762cd7f740c64280906f6a4893921fbcd19f49483743f417e13302be",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=1078986931/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:19.909365+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1078986931_page_2.json",
+      "sha256": "5687344ecd98ccb8150f2e87199e564cd5e0e4f34120e7738cb97f295297a726",
+      "entries": 50
+    },
+    {
+      "url": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=1078986931/sortby=mostrecent/json",
+      "accessed_at": "2026-11-15T17:30:20.717367+00:00",
+      "snapshot_path": "data/raw/review_collection/2026-11-15/1078986931_page_3.json",
+      "sha256": "92efd357ce18cc4114cd2f15af9f56bdf182e2bd4d38074b5f131a62a017d466",
+      "entries": 50
+    }
+  ]
+}
