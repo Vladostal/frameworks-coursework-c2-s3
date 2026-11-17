@@ -1,0 +1,32 @@
+{
+  "objects": 350,
+  "matching_labels": 240,
+  "disagreements": 110,
+  "agreement_fraction": 0.6857142857142857,
+  "cohen_kappa": 0.6333333333333334,
+  "andrey_counts": {
+    "sadness": 50,
+    "fear": 50,
+    "happiness": 50,
+    "anger": 50,
+    "disgust": 50,
+    "enthusiasm": 50,
+    "neutral": 50
+  },
+  "vlad_counts": {
+    "sadness": 45,
+    "fear": 42,
+    "happiness": 68,
+    "anger": 99,
+    "disgust": 21,
+    "neutral": 67,
+    "enthusiasm": 8
+  },
+  "dataset_sha256": "1ee3f4c1faa66c58b2da4d9da2aeff137a74f171be3ef055e7297b7c8cd64b2c",
+  "codebook": "docs/codebook.md",
+  "codebook_version": "1.0",
+  "annotators": {
+    "andrey_label": "Андрей",
+    "vlad_label": "Влад"
+  }
+}

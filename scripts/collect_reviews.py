@@ -38,6 +38,14 @@ APPS = {
     "477718890": "Кинопоиск",
     "1078986931": "Яндекс Еда",
 }
+HORROR_APPS = {
+    "1323957120": "Granny",
+    "1479175321": "Granny: Chapter Two",
+    "1570525877": "The Baby In Yellow",
+    "631771776": "Eyes: Хоррор-игра",
+    "1557035248": "The Ghost - Multiplayer Horror",
+    "941143328": "Five Nights at Freddy's 2",
+}
 COLLECTED_FIELDS = ["item_id", "text", "source_url", "accessed_at", "license"]
 METADATA_FIELDS = [
     "item_id", "source_record_id", "app_id", "app_name", "title", "rating",
@@ -352,13 +360,17 @@ def collect(args):
 
 
 def main():
+    global APPS
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--batch", default=datetime.now(timezone.utc).date().isoformat())
     parser.add_argument("--pages", type=int, default=3, choices=range(1, 11))
     parser.add_argument("--limit", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--offline", action="store_true", help="Use cached snapshots only")
+    parser.add_argument("--app-set", choices=["services", "horror"], default="services")
     args = parser.parse_args()
+    if args.app_set == "horror":
+        APPS = HORROR_APPS
     if args.limit < 1 or not re.fullmatch(r"[A-Za-z0-9_-]+", args.batch):
         parser.error("Positive --limit and a simple --batch name are required")
     collect(args)
