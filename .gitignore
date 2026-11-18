@@ -18,8 +18,17 @@ Thumbs.db
 *.swp
 *~
 
-# Данные хранятся только локально
-/data/
+# Исходные данные и промежуточный сбор остаются локально
+/data/*
+!/data/manual/
+/data/manual/*
+!/data/manual/text/
+/data/manual/text/*
+!/data/manual/text/annotator.html
+!/data/manual/text/dataset.csv
+!/data/manual/text/dual_annotation_summary.json
+!/data/manual/text/dual_annotations.csv
+!/data/manual/text/sources.csv
 *.zip
 
 # Учётные данные
